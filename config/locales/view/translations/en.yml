@@ -1,0 +1,11 @@
+--- 
+en: !map:HashWithIndifferentAccess 
+  translations: !map:HashWithIndifferentAccess 
+    edit: !map:HashWithIndifferentAccess 
+      title: Edit
+    index: !map:HashWithIndifferentAccess 
+      title: Translations
+    _form: !map:HashWithIndifferentAccess 
+      submit: update
+    flash: !map:HashWithIndifferentAccess 
+      updated: Sucessfully updated!

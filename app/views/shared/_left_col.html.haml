@@ -1,0 +1,6 @@
+.left_col
+  %ul
+    %li{:class => ("active" if params[:controller] == "messages")}
+      = link_to t("shared.left_col.link_to.messages"), root_path
+    %li{:class => ("active" if params[:controller] == "translations")}
+      = link_to t("shared.left_col.link_to.translations"), translations_path

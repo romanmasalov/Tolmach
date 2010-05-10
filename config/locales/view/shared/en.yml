@@ -1,0 +1,7 @@
+--- 
+en: !map:HashWithIndifferentAccess 
+  shared: !map:HashWithIndifferentAccess 
+    left_col: !map:HashWithIndifferentAccess 
+      link_to: !map:HashWithIndifferentAccess 
+        messages: messages
+        translations: translations

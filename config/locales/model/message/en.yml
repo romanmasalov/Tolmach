@@ -1,0 +1,8 @@
+--- 
+en: !map:HashWithIndifferentAccess 
+  activerecord: !map:HashWithIndifferentAccess 
+    errors: !map:HashWithIndifferentAccess 
+      full_messages: !map:HashWithIndifferentAccess 
+        message: !map:HashWithIndifferentAccess 
+          body: !map:HashWithIndifferentAccess 
+            blank: Content can`t be blank!

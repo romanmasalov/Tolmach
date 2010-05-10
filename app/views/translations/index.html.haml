@@ -1,0 +1,9 @@
+%h1
+  = t('translations.index.title')
+.clean
+.translations-list
+  - for val in @keys.sort
+    %b
+      = link_to val.first, edit_translation_path(:id => val.first.unpack('H*'))
+    .cln
+.cln

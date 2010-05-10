@@ -1,0 +1,56 @@
+
+# -- Validation Messages-----------------------------------
+/locales/model/message:
+  activerecord:
+    errors:
+      full_messages:
+        message:
+          body:
+            blank: ""
+
+#-- views -------------------------------------
+
+/locales/view/messages:
+  messages:
+    index:
+      title: ""
+      link_to:
+        new: ""
+      table:
+        head:
+          date: ""
+          body: ""
+        body:
+          link_to:
+            edit: ""
+    new:
+      title: ""
+    edit:
+      title: ""
+    _form:
+      create: ""
+      update: ""
+      label:
+        body: ""
+    flash:
+      created: ""
+      updated: "Sucessfully updated"
+
+/locales/view/translations:
+  translations:
+    index:
+      title: ""
+    edit:
+      title: ""
+    _form:
+      submit: ""
+    flash:
+      updated: "Sucessfully updated"
+
+/locales/view/shared:
+  shared:
+    left_col:
+      link_to:
+        messages: ""
+        translations: ""
+

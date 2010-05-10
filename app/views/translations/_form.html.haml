@@ -1,0 +1,25 @@
+%ul
+  - for val in keys.sort
+    - if val.second.is_a?(Hash)
+      %li
+        = val.first
+      %li
+        - key << "['#{val.first}']"
+        = render :partial => 'form', :locals => {:translations => translations, :dir => dir, :keys => val.second, :key => key}
+    - else
+      %li
+        = val.first + ':'
+      %li
+        %ul
+          - for locale in I18n.backend.available_locales
+            %li
+              = "#{locale}:"
+              - v = eval("translations['#{dir}']['#{locale.to_s}']#{key.join}['#{val.first}']") rescue ""
+              = text_field_tag "[#{locale}]#{key.join.gsub(/[']/, '')}[#{val.first}]" , v
+  - key.pop
+
+
+
+
+
+

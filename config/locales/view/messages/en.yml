@@ -1,0 +1,26 @@
+--- 
+en: !map:HashWithIndifferentAccess 
+  messages: !map:HashWithIndifferentAccess 
+    new: !map:HashWithIndifferentAccess 
+      title: New message
+    edit: !map:HashWithIndifferentAccess 
+      title: Edit message
+    index: !map:HashWithIndifferentAccess 
+      link_to: !map:HashWithIndifferentAccess 
+        new: new
+      title: Messages
+      table: !map:HashWithIndifferentAccess 
+        head: !map:HashWithIndifferentAccess 
+          body: content
+          date: date
+        body: !map:HashWithIndifferentAccess 
+          link_to: !map:HashWithIndifferentAccess 
+            edit: edit >>
+    _form: !map:HashWithIndifferentAccess 
+      label: !map:HashWithIndifferentAccess 
+        body: message content
+      create: create new message
+      update: Update message
+    flash: !map:HashWithIndifferentAccess 
+      updated: Sucessfully updated!
+      created: Sucessfully created!

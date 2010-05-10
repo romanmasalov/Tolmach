@@ -1,0 +1,10 @@
+.head
+  Tolmach.
+  %span
+    %ul
+      %li{:class => "#{'active' if I18n.locale.to_s == "en"}"}
+        = link_to "en", switch_language_translations_path(:switch_to => "en")
+      %li{:class => "#{'active' if I18n.locale.to_s == "ru"}"}
+        = link_to "ru", switch_language_translations_path(:switch_to => "ru")
+      
+.cln

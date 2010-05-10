@@ -1,0 +1,6 @@
+%h1
+  = t('messages.new.title')
+
+- form_for @message do |f|
+  = render :partial => "form", :locals => {:f => f}
+  = f.submit t("messages._form.create")

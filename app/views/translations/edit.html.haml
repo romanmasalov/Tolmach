@@ -1,0 +1,14 @@
+%h1
+  = t('translations.edit.title')
+.cln
+.translations-list
+  - for val in @keys.sort
+    %b
+      = link_to val.first, edit_translation_path(:id => val.first.unpack('H*'))
+    - form_tag translation_path(:id => val.first.unpack('H*')), :method => :put do
+      %fieldset
+        = render :partial => 'form', :locals => {:translations => @translations, :dir => val.first, :keys => val.second, :key => []}
+        .cln.h10px
+      = submit_tag t('translations._form.submit')
+      .cln
+.cln

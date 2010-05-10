@@ -1,0 +1,15 @@
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml", 'xml:lang' => "en", :lang => "en"}
+  %head
+    %meta{:http_equiv => "Content-type", :content => "text/html; charset=utf-8"}
+    != stylesheet_link_tag 'style'
+    != javascript_include_tag "application.js"
+    %title Tolmach
+  %body
+    .container
+      != render :partial => "shared/head"
+      .flash-message
+        = flash[:message]
+      != render :partial => "shared/left_col"
+      .content
+        != yield
