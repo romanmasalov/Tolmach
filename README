@@ -1,1 +1,5 @@
-I18n translations helper
+This is a demo translation app using Tolmach system.
+
+This system consists of translations controller which is an interface for more comfortable I18n translation using web frontend.
+
+All keys are stored in general locale yml file and then are splitter using the nested yml logics, most likely for views.
